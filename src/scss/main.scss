@@ -1,0 +1,48 @@
+@import "./libs/normalize";
+@import "./components/header";
+@import "./components/categories";
+@import "./components/sort";
+@import "./components/sushi";
+
+body {
+    background-color: rgb(199, 255, 207);
+    letter-spacing: 0.4px;
+}
+
+.wrapper {
+    width: calc(100vw - 100px);
+    height: 100%;
+    background-color: #ffffff;
+    margin: 50px auto;
+    border-radius: 14px;
+    max-width: 1600px;
+}
+
+.content {
+    padding: 30px 0;
+}
+
+.container {
+    width: $container-width;
+    margin: 0 auto;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__sort--category {
+        position: relative;
+
+        .sort {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    &__sushi {
+        margin-top: 20px;
+    }
+}

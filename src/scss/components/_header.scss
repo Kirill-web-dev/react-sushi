@@ -1,0 +1,62 @@
+@import "../varaibles";
+
+header {
+    border-bottom: 1px solid $lightBlackColor;
+    padding: 20px 0;
+
+    .title {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        margin-right: 25px;
+    }
+
+    h1,
+    h4 {
+        cursor: default;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 18px;
+        opacity: 0.3;
+        font-weight: 500;
+    }
+
+    .search {
+        input {
+            border: 0;
+            outline: none;
+            border: 1px solid $lightBlackColor;
+            padding: 10px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    }
+
+    .open__cart {
+        button {
+            background-color: $orange;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 22px;
+            transition: all $duration ease-in-out;
+
+            &:hover {
+                background-color: darken($color: $orange, $amount: 30%);
+                cursor: pointer;
+            }
+
+            span {
+                color: $white;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+    }
+}

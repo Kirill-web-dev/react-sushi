@@ -1,0 +1,80 @@
+@import "../varaibles";
+
+.sushies {
+    display: flex;
+    gap: 45px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    @include noselect();
+
+    .sushi {
+        width: 236px;
+        min-height: 300px;
+        padding: 10px;
+
+        img {
+            cursor: pointer;
+        }
+
+        &:hover {
+            box-shadow: 0 5px 10px $lightBlackColor;
+            border-radius: 10px;
+        }
+    }
+
+    .about {
+        text-align: left;
+        margin-bottom: 15px;
+        height: 90px;
+
+        h3 {
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        p {
+            opacity: 0.5;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+
+    .down {
+        display: flex;
+        justify-content: space-between !important;
+        align-items: flex-end;
+
+        b {
+            font-size: 18px;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+
+        button {
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px 12px;
+            font-weight: 700;
+            border-radius: 12px;
+            border: 0;
+
+            transition: background-color $duration ease-in-out;
+
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            &:active {
+                transform: translateY(2px);
+                box-shadow: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "../varaibles";
+
+.categories {
+    ul {
+        display: flex;
+
+        li {
+            background-color: #f3f3f3;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all $duration ease-in-out;
+            @include noselect();
+
+            &:not(:last-of-type) {
+                margin-right: 20px;
+            }
+
+            &:hover {
+                background-color: darken(#f3f3f3, 4%);
+            }
+
+            &:active {
+                background-color: darken(#f3f3f3, 9%);
+            }
+
+            &.active {
+                background-color: #282828;
+                color: $white;
+            }
+        }
+    }
+}
