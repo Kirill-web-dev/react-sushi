@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sushi = ({ imageUrl, title, desc, price }) => {
+const Rolls = ({ imageUrl, title, desc, price }) => {
     return (
         <>
             <div className="sushi">
@@ -23,4 +23,4 @@ const Sushi = ({ imageUrl, title, desc, price }) => {
     );
 };
 
-export default Sushi;
+export default Rolls;

@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import sushiSlice from "./slices/sushiSlice";
+import rollsSlice from "./slices/rollsSlice";
+import sortSlice from "./slices/sortSlice";
 
 export const store = configureStore({
     reducer: {
-        sushiSlice,
+        rollsSlice,
+        sortSlice,
     },
 });

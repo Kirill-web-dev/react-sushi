@@ -1,30 +1,35 @@
 import React from "react";
 
+import { useSelector, useDispatch } from "react-redux";
+import { setSort } from "../redux/slices/sortSlice";
+
 const PopUpCategory = [
     {
         title: "Популярности",
-        sortParametr: "rating",
+        sortProperty: "rating",
     },
     {
         title: "Цене вниз",
-        sortParametr: "price",
+        sortProperty: "price",
     },
     {
         title: "Цене вверх",
-        sortParametr: "-price",
+        sortProperty: "-price",
     },
 ];
 
 const Sort = () => {
     const [togglePopUp, setTogglePopUp] = React.useState(false);
-    const [choosedPopUpCategory, setChoosedPopUpCategory] = React.useState(0);
+
+    const dispatch = useDispatch();
+    const sort = useSelector((state) => state.sortSlice.sort);
 
     const openClosePopUp = () => {
         setTogglePopUp(!togglePopUp);
     };
 
-    const setPopUpCategory = (index) => {
-        setChoosedPopUpCategory(index);
+    const setPopUpCategory = (obj) => {
+        dispatch(setSort(obj));
         setTogglePopUp(!togglePopUp);
     };
 
@@ -48,7 +53,7 @@ const Sort = () => {
                     className="sort__by"
                 >
                     <b>Сортировать по: </b>
-                    <span>{PopUpCategory[choosedPopUpCategory].title}</span>
+                    <span>{sort.title}</span>
                 </div>
             </div>
             {togglePopUp && (
@@ -56,8 +61,9 @@ const Sort = () => {
                     <ul>
                         {PopUpCategory.map((obj, index) => (
                             <li
-                                onClick={() => setPopUpCategory(index)}
-                                className={choosedPopUpCategory === index ? "active" : ""}
+                                key={index}
+                                onClick={() => setPopUpCategory(obj)}
+                                className={obj.sortProperty === sort.sortProperty ? "active" : ""}
                             >
                                 {obj.title}
                             </li>

@@ -44,5 +44,22 @@ body {
 
     &__sushi {
         margin-top: 20px;
+
+        &--error {
+            text-align: center;
+            padding: 150px;
+
+            h3 {
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 40px;
+                color: red;
+            }
+
+            p {
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
     }
 }

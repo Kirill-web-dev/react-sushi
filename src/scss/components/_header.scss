@@ -29,6 +29,15 @@ header {
     }
 
     .search {
+        position: relative;
+
+        p {
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            cursor: pointer;
+        }
+
         input {
             border: 0;
             outline: none;

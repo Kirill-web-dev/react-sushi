@@ -2,7 +2,7 @@ import ContentLoader from "react-content-loader";
 
 import React from "react";
 
-function Skeleton({ index }) {
+function Skeleton() {
     return (
         <ContentLoader
             speed={0.5}
@@ -11,7 +11,6 @@ function Skeleton({ index }) {
             viewBox="0 0 216 300"
             backgroundColor="#cccccc"
             foregroundColor="#ffffff"
-            index
         >
             <rect
                 x="21"

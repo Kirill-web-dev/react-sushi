@@ -1,45 +1,71 @@
 import React from "react";
 
-import { fetchSushies } from "../redux/slices/sushiSlice";
+import { fetchRolls, setCurrentPage } from "../redux/slices/rollsSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 import Sort from "../components/Sort";
-import Sushi from "../components/Sushi";
+import Rolls from "../components/Rolls";
 import Categories from "../components/Categories";
 
-import Skeleton from "../components/Sushi/SushiLoader";
+import Pagination from "../components/Pagination";
+import Skeleton from "../components/Rolls/RollsLoader";
 
 const Home = () => {
     const dispatch = useDispatch();
-    const { sushiItems, status } = useSelector((state) => state.sushiSlice);
-    const getSushies = async () => {
-        dispatch(fetchSushies());
+    const { rollsItems, status, currentPage } = useSelector((state) => state.rollsSlice);
+    const { sort, searchValue } = useSelector((state) => state.sortSlice);
+
+    const sortType = sort.sortProperty;
+
+    const getRolls = async () => {
+        const order = sortType.includes("-") ? "asc" : "desc";
+        const sortBy = sortType.replace("-", "");
+        const searchBy = searchValue ? searchValue : "";
+
+        dispatch(fetchRolls({ sortBy, order, currentPage, searchBy }));
     };
 
     React.useEffect(() => {
-        getSushies();
-    }, []);
+        getRolls();
+    }, [sortType, currentPage, searchValue]);
 
-    const sushies = sushiItems.map((sushi, index) => <Sushi {...sushi} />);
-    const skeleton = [...new Array(8)].map((_, index) => <Skeleton key={index} />);
+    const onChangePage = (page) => {
+        dispatch(setCurrentPage(page));
+    };
+
+    const rolls = rollsItems
+        // .filter((roll) => roll.title.toLowerCase().includes(searchValue.toLowerCase()))
+        .map((sushi, index) => (
+            <Rolls
+                key={index}
+                {...sushi}
+            />
+        ));
+    const skeleton = [...new Array(8)].map((_, index) => <Skeleton />);
     return (
         <main>
             <div className="content">
                 <div className="container container__sort--category">
                     <Categories />
                     <Sort />
-                    <h1>Роллы</h1>
                 </div>
                 <div className="container container__sushi">
                     {status === "error" ? (
                         <div className="container__sushi--error">
-                            <h3>Не удалось загрузить роллы</h3>
+                            <h3>Не удалось загрузить роллы :(</h3>
                             <p>Попробуйте перезагрузить страницу</p>
                         </div>
                     ) : (
-                        <div className="sushies">{status === "loading" ? skeleton : sushies}</div>
+                        <div className="container__sushi--success">
+                            <h1>Роллы</h1>
+                            <div className="sushies">{status === "loading" ? skeleton : rolls}</div>
+                        </div>
                     )}
                 </div>
+                <Pagination
+                    currentPage={currentPage}
+                    onChangePage={onChangePage}
+                />
             </div>
         </main>
     );

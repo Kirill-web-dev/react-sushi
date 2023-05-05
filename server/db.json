@@ -1,76 +1,244 @@
 {
     "rolls": [
         {
+            "id": "1",
+            "rating": "3",
             "title": "Нацу",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/ep80E_fu79hXE7XE2UBzwR5r4eiBKzp7.jpg",
-            "price": "490",
+            "price": 490,
             "desc": "тунец, краб-микс, авокадо, трюфельный сыр, огурец, тобико, трюфельное масло, рис, маменори"
         },
         {
+            "id": "2",
+            "rating": "3",
             "title": "Макото",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/lQXTSVJg_ynfos-g8_R2eEPCTg_VADoF.jpg",
-            "price": "490",
+            "price": 490,
             "desc": "гребешок, манго, авокадо, краб-микс, креветки, тобико, соус «Спайси манго», рис, маменори"
         },
         {
+            "id": "3",
+            "rating": "1",
             "title": "Принцесс",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/0pyQ1iJASjQ71TY9P_E6tqM-nuaQEw7z.jpg",
-            "price": "240",
+            "price": 240,
             "desc": "авокадо, такуан, яблоко, огурец, имбирь, кунжут, рис, нори"
         },
         {
+            "id": "4",
+            "rating": "2",
             "title": "Хироши",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/bBSz35iUmeSslHu7X1GcXJh3B3AEz-m_.jpg",
-            "price": "450",
+            "price": 450,
             "desc": "лосось, краб-микс, авокадо, тесто катаифи, чеддер, соус спайс, рис, нори"
         },
         {
+            "id": "5",
+            "rating": "2",
             "title": "Эби манго",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/tYZDTqj5MalhfQ64YaM2LZYm5FiAW_V6.jpg",
-            "price": "450",
+            "price": 450,
             "desc": "креветка, краб-микс, манго, сыр, тобико, кинза, соус «Спайси-манго», рис, нори"
         },
         {
+            "id": "6",
+            "rating": "1",
             "title": "Ичиро",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/fkv0FK9caIHhEUXxJYDKEa0tZ8cGRU2W.jpg",
-            "price": "480",
+            "price": 480,
             "desc": "креветка, угорь, авокадо, сыр чеддер, тобико, зеленый лук, соус «Спайси-манго», рис, нори"
         },
         {
+            "id": "7",
+            "rating": "1",
             "title": "Юмико",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/USLqrJl9jdD6CC9S1ABOggB1ORpiXmIB.jpg",
-            "price": "490",
+            "price": 490,
             "desc": "микс лосося и креветок, угорь, авокадо, салат, соусы спайс и унаги, кунжут, рис, нори"
         },
         {
+            "id": "8",
+            "rating": "3",
             "title": "Одзу",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/G9gS4P7q1GTMAqg86kh2mJ4z_aO5G1tR.jpg",
-            "price": "490",
+            "price": 490,
             "desc": "лосось, тунец, авокадо, тобико, салат, зеленый лук, соусы «Нисуаз», спайс и унаги, рис, нори"
         },
         {
+            "id": "9",
+            "rating": "1",
             "title": "Калифорния",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/k8i-pgcWbDhqJGqORRogZffG7nRUemlU.jpg",
-            "price": "495",
+            "price": 495,
             "desc": "краб-микс, авокадо, огурец, тобико, рис, нори"
         },
         {
+            "id": "10",
+            "rating": "1",
             "title": "Калифорния хот",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/6pD6VITbiTOOKlEM8W7eUapaJL7s5A3g.jpg",
-            "price": "530",
+            "price": 530,
             "desc": "краб-микс, авокадо, огурец, тобико, кунжут, рис, нори"
         },
         {
+            "id": "11",
+            "rating": "1",
             "title": "Калифорния с угрем",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/da5n5W2W3Xl86SCfaZZWg301ghlcceHs.jpg",
-            "price": "460",
+            "price": 460,
             "desc": "угорь, икра тобико черная, авокадо, огурцы, кунжут, стружка тунца, рис, нори"
         },
         {
+            "id": "12",
+            "rating": "1",
             "title": "Окинава",
             "imageUrl": "https://kcdn.tanuki.ru/images/1/0LQX_kF6uy511H4p3R2jsoP4ITFSvAel.jpg",
-            "price": "390",
+            "price": 390,
             "desc": "креветка темпура, огурец, сыр, тобико, кунжут, рис, нори"
+        },
+
+        {
+            "id": "13",
+            "rating": "2",
+            "title": "Орандж краб",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/7Tc_jSiWENomopEe4oTdCgfJvJ7KsR1n.jpg?width=400&height=400",
+            "price": 470,
+            "desc": "краб-микс, авокадо, сыр, микс соусов, хрустящая маменори, лук зеленый"
+        },
+
+        {
+            "id": "14",
+            "rating": "3",
+            "title": "Аригато",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/rEJK3tv1GMvTJHR7fyWxj_qdbzaTzXQT.jpg?width=400&height=400",
+            "price": 470,
+            "desc": "креветка, рукола, авокадо, огурец, трио фирменных соусов, рис, нори"
+        },
+
+        {
+            "id": "15",
+            "rating": "1",
+            "title": "Запеченный краб",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/eOp18mvq_qu2kBiTt9MPAzE74A7-LK8j.jpg?width=400&height=400",
+            "price": 490,
+            "desc": "краб-микс, авокадо, тобико, зеленый лук, рис, нори"
+        },
+
+        {
+            "id": "16",
+            "rating": "3",
+            "title": "Нобуко",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/0B0iSKQwUbKteUpW1uPI2W3-rl3szyWi.jpg?width=400&height=400",
+            "price": 450,
+            "desc": "креветка, краб-микс, огурец, кунжут, тобико, зелень, имбирь, микс соусов, рис, нори"
+        },
+
+        {
+            "id": "17",
+            "rating": "1",
+            "title": "Курай",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/cCtdrBwDenZYf92uzNkdLHmDsQPhQQTj.jpg?width=400&height=400",
+            "price": 480,
+            "desc": "лосось, угорь, сыр, кунжут, лук сибулет, острый соус, рис, нори"
+        },
+
+        {
+            "id": "18",
+            "rating": "3",
+            "title": "Филадельфия Нисуаз",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/U25E0j4n2zlGeJgo4CQq0VMN0S2Ubq29.jpg?width=400&height=400",
+            "price": 545,
+            "desc": "угорь, авокадо, краб-микс, сыр, тобико, имбирь, лук зеленый, кунжут и одноименный соус нисуаз"
+        },
+
+        {
+            "id": "19",
+            "rating": "2",
+            "title": "Тануки",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/84o22trB0aglj2gkHp_5_isLoYi5Au8C.jpg?width=400&height=400",
+            "price": 495,
+            "desc": "креветка, краб-микс, гуакамоле, сыр, огурец, микс соусов, тобико, кунжут, рис, нори"
+        },
+
+        {
+            "id": "20",
+            "rating": "1",
+            "title": "Маки с огурцом",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/PH6TBUTk6IOGbVvw10zcTBVpKBsMZEnP.jpg?width=400&height=400",
+            "price": 190,
+            "desc": "огурец, рис, нори"
+        },
+
+        {
+            "id": "21",
+            "rating": "2",
+            "title": "Мексиканский",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/LhdOy1uC9gnr1NEJDBKTpZeSNotTGv0m.jpg?width=400&height=400",
+            "price": 495,
+            "desc": "креветка темпура, огурец, тобико, рис нори"
+        },
+
+        {
+            "id": "22",
+            "rating": "1",
+            "title": "Дракон",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/hhXgmAhOhftGMths4rGAHJbiRDr3qSUC.jpg?width=400&height=400",
+            "price": 495,
+            "desc": "угорь, авокадо, нежный сыр, тобико, кунжут, зеленый лук"
+        },
+
+        {
+            "id": "23",
+            "rating": "3",
+            "title": "Манго Грин",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/WNqvSmTJIgqAx1CfWCHO8TUxRA6hSGHf.jpg?width=400&height=400",
+            "price": 470,
+            "desc": "креветка, авокадо, манго, тобико, соусы васаби и унаги, рис, нори"
+        },
+
+        {
+            "id": "24",
+            "rating": "2",
+            "title": "Запеченный лосось",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/tGnI0NlHjN95UYdT3FHC1Nk95kLrErfc.jpg?width=400&height=400",
+            "price": 530,
+            "desc": "лосось жареный, камбала, сыр, базилик, рис, нори"
+        },
+
+        {
+            "id": "25",
+            "rating": "3",
+            "title": "Даку",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/f7n9LCBLSlvFgcBYzSUQs5Y_NvW9TiV9.jpg?width=400&height=400",
+            "price": 495,
+            "desc": "угорь, креветка, авокадо, огурец, тобико, соус «Унаги», зеленый лук, рис, нори"
+        },
+
+        {
+            "id": "26",
+            "rating": "2",
+            "title": "Маки с авокадо",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/GI7h9r2RPzVsxBWDU5CsCXLUhBHApoJe.jpg?width=400&height=400",
+            "price": 190,
+            "desc": "авокадо, рис, нори"
+        },
+
+        {
+            "id": "27",
+            "rating": "1",
+            "title": "Чедер",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/N8spFkK05mugOoEIO0Q-dz0UWRMvolNn.jpg?width=400&height=400",
+            "price": 495,
+            "desc": "лосось жареный, камбала, авокадо, кунжут, сыр Чеддер, соус унаги, зеленый лук, рис, нори"
+        },
+
+        {
+            "id": "28",
+            "rating": "3",
+            "title": "Сенсей",
+            "imageUrl": "https://kcdn.tanuki.ru/images/1/T5Mft123VxXx0vj_g7PpwfKN3lT3D_wg.jpg?width=400&height=400",
+            "price": 525,
+            "desc": "креветка темпура, лосось, огурец, авокадо, сыр, перец, микс соусов, кунжут, рис, нори"
         }
     ]
 }
